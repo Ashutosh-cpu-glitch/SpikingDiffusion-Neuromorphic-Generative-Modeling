@@ -88,6 +88,7 @@ MSE(Noisy vs Original) > MSE(Denoised vs Original)
 This confirms that the model learns to **partially reverse corruption**, validating the diffusion objective.
 
 > Note: Full high-quality generation from pure noise is computationally expensive, especially with SNNs. This work focuses on validating the **denoising component**.
+---
 
 ### 3️⃣ Spike-based Audio Rate Coding
 
@@ -133,6 +134,10 @@ pip install torch torchvision snntorch matplotlib tqdm
 ```
 ## Acknowledgement
 This project is an exploratory research prototype aimed at understanding the intersection of:
+
 -Neuromorphic computing
+
 -Generative modeling
+
 -Spike-based information processing
+---
