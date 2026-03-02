@@ -20,8 +20,9 @@ The emphasis is on:
 
 ---
 
-##  Repository Structure
+## 📂 Repository Structure
 
+```
 SpikingDiffusion/
 │
 ├── core/
@@ -34,6 +35,7 @@ SpikingDiffusion/
 ├── 3_spike_based_audio_rate_coding.ipynb
 │
 └── README.md
+```
 
 
 ---
@@ -129,12 +131,8 @@ A lower MSE after denoising indicates successful learning of the reverse diffusi
 ```bash
 pip install torch torchvision snntorch matplotlib tqdm
 ```
-Acknowledgement
-
+## Acknowledgement
 This project is an exploratory research prototype aimed at understanding the intersection of:
-
-Neuromorphic computing
-
-Generative modeling
-
-Spike-based information processing
+-Neuromorphic computing
+-Generative modeling
+-Spike-based information processing
