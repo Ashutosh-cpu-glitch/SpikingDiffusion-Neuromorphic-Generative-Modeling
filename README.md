@@ -140,4 +140,3 @@ This project is an exploratory research prototype aimed at understanding the int
 -Generative modeling
 
 -Spike-based information processing
----
