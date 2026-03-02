@@ -21,12 +21,13 @@ The emphasis is on:
 ---
 
 ##  Repository Structure
+
 SpikingDiffusion/
 │
 ├── core/
-│ ├── models.py # SpikingAutoencoder, SpikingDenoiser
-│ ├── diffusion.py # Diffusion process and noise formulation
-│ ├── utils.py # Visualization helpers
+│   ├── models.py
+│   ├── diffusion.py
+│   ├── utils.py
 │
 ├── 1_spiking_autoencoder_mnist.ipynb
 ├── 2_spiking_diffusion_denoising_mnist.ipynb
@@ -48,9 +49,7 @@ Static inputs (images and signals) are converted into spike trains using **rate 
 ### 🔹 Diffusion-style Modeling
 A simplified diffusion formulation is used:
 
-\[
-x_t = \sqrt{\bar{\alpha}_t} \cdot x_0 + \sqrt{1 - \bar{\alpha}_t} \cdot \epsilon
-\]
+x_t = sqrt(alpha_bar_t) * x0 + sqrt(1 - alpha_bar_t) * epsilon
 
 - Forward process: progressively corrupt data with noise  
 - Reverse process: train a model to **predict noise** (denoising)
@@ -129,3 +128,13 @@ A lower MSE after denoising indicates successful learning of the reverse diffusi
 
 ```bash
 pip install torch torchvision snntorch matplotlib tqdm
+```
+Acknowledgement
+
+This project is an exploratory research prototype aimed at understanding the intersection of:
+
+Neuromorphic computing
+
+Generative modeling
+
+Spike-based information processing
