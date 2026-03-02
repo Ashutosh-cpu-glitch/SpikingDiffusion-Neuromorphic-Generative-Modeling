@@ -26,6 +26,7 @@ The emphasis is on:
 SpikingDiffusion/
 │
 ├── core/
+│   ├── __init__.py
 │   ├── models.py
 │   ├── diffusion.py
 │   ├── utils.py
