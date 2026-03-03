@@ -70,5 +70,5 @@ class SpikingDenoiser(nn.Module):
 
             spk_out.append(spk2)
 
-        # Return average over time
-        return torch.mean(torch.stack(spk_out), dim=0)
+        # Return full temporal output
+        return torch.stack(spk_out)
